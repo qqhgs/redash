@@ -1,0 +1,16 @@
+@import '../../scss/_var.scss';
+
+header {
+  display: flex;
+	flex-direction: column;
+	align-items: center;
+  justify-content: center;
+
+  .title {
+    padding: 1rem;
+
+		.dot {
+			color: $nord11;
+		}
+  }
+}

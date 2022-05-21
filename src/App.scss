@@ -1,0 +1,12 @@
+@import "./scss/_var.scss";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: $nord6;
+	color: $nord0;
+}
