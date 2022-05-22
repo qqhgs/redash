@@ -9,18 +9,19 @@
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
+		"composite": true,
     "module": "ESNext",
     "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-		"baseUrl": ".",
-		"paths": {
-			"@Components": ["./src/components"],
-			"@Pages": ["./src/pages"]
-		}
+    "baseUrl": ".",
+    "paths": {
+      "@Components": ["./src/components"],
+      "@Pages": ["./src/pages"]
+    }
   },
-  "include": ["src", "**/*.tsx"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "exclude": ["node_modules"],
+  "include": ["vite.config.ts", "**/*.ts", "**/*.tsx", "**/*/js"]
 }
